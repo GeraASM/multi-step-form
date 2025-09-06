@@ -1,0 +1,139 @@
+.personal {
+    max-width: 375px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.personal-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: var(--spacing-400) var(--spacing-300);
+    width: 343px;
+    margin-top: -40px;
+}
+
+.personal-form__title {
+    color: var(--color-blue-950);
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.personal-form__ad {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-grey-500);
+}
+
+.personal-form__inputs {
+    margin-top: var(--spacing-300);
+}
+label , input {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+}
+
+.personal-form__block label {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--color-blue-950);
+    height: auto;
+    margin-bottom: 8px;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid var(--color-purple-200);
+    height: 40px;
+    padding: 8px 16px;
+}
+input:focus {
+    outline-color: var(--color-purple-200);
+
+    background-color: transparent;
+}
+
+.personal-form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.personal__btns {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    height: 72px;
+    background-color: #fff;
+    bottom: 0; left: 0;
+    width: 100%;
+    align-items: center;
+    padding: 24px;
+}
+
+.persona-form__top {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input--error {
+    border: 1px solid var(--color-red-500);
+}
+.text-error {
+    display: inline-block;
+    color: var(--color-red-500);
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: 400px;
+    text-align: end;
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .personal {
+        max-width: 686px;
+        flex-direction: row;
+        height: 600px;
+        align-items: stretch;
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+    .personal-form {
+        flex-grow: 1;
+        margin-top: 0;
+    }
+
+    .next-inside-form {
+        display: block;
+        margin-top: auto !important;
+    }
+    .personal-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .personal__btns {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .personal {
+        max-width: 940px;
+    }
+
+    .personal-form {
+        max-width: 450px;
+        margin-inline: auto;
+    }
+}

@@ -1,0 +1,48 @@
+.sidebar__step {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sidebar__step-btn {
+    width: 33px; height: 33px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.sidebar__step-number {
+    color: inherit;
+    font-weight: bold;
+}
+
+.sidebar__step-text {
+    color: var(--color-blue-300);
+    font-size: 12px; line-height: 1.2;
+}
+
+.sidebar__step-title {
+    color: #fff; font-size: 14px; line-height: 1.2; letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.sidebar__step-btn:hover, .sidebar__step-btn--selected {
+    background-color: var(--color-blue-200);
+    border-color: transparent;
+    color: var(--color-blue-950);
+}
+
+.sidebar__step-option {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sidebar__step-option {
+        display: block;
+    }
+}

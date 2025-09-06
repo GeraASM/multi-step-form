@@ -1,0 +1,10 @@
+.btn-next {
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--color-blue-950);
+    height: 40px; width: 100px;
+    border: none;
+    margin-left: auto;
+    display: block;
+}

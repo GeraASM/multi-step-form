@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root {
+  --color-grey-500: #9699AA;
+  --color-orange-300: #FFAF7E;
+  --color-red-500: #EE374A;
+  --color-red-450: #E96170;
+  --color-red-400: #F9818E;
+  --color-purple-600: #483EFF;
+  --color-purple-500: #6259FF;
+  --color-purple-400: #928CFF;
+  --color-purple-200: #D6D9E6;
+  --color-blue-950: #022959;
+  --color-blue-700: #164A8A;
+  --color-blue-300: #ABBCFF;
+  --color-blue-200: #BEE2FD;
+  --color-blue-100: #EFF5FF;
+  --color-blue-50: #F8F9FF;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-700: 56px;
+
+  --font-size-title: 24px;
+  --line-height-title: 1.2;
+  --font-weight-title: bold;
+
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--color-blue-50);
+}
+
+input, label, button {
+  font-family: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --font-size-title: 32px;
+  }
+}

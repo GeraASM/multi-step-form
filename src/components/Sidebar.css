@@ -1,0 +1,30 @@
+.sidebar__background {
+    height: 172px;
+    width: 375px;
+    background-image: url("/assets/images/bg-sidebar-mobile.svg");
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .sidebar__background {
+        border-radius: 16px;
+        background-image: url("/assets/images/bg-sidebar-desktop.svg");
+        width: 250px;
+        height: 568px;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: var(--spacing-400);
+        gap: var(--spacing-400);
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .sidebar__background {
+        width: 274px;
+
+    }
+}

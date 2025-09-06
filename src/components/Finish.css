@@ -1,0 +1,143 @@
+.finish {
+    max-width: 375px;
+    margin-inline: auto;
+}
+
+
+.finish-information {
+    background-color: #fff;
+    padding: var(--spacing-400) var(--spacing-300);
+    border-radius: 10px;
+    width: 343px;
+    margin-inline: auto;
+    margin-top: -40px;
+}
+
+.finish__title {
+    color: var(--color-blue-950);
+    font-size: 1.2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.finish__ad {
+    line-height: 1.5;
+    font-size: 16px;
+    color: var(--color-grey-500);
+}
+
+.finish__details {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: var(--color-blue-50);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.finish__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.finish__card-title {
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--color-blue-950);
+}
+
+.finish__change {
+    color: var(--color-grey-500);
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.finish__price {
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: var(--color-blue-950);
+}
+
+.finish__line {
+    height: 1px;
+    background-color: var(--color-grey-500);
+    width: 100%;
+}
+
+.finish__tools {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.finish__type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.finish__type-price {
+    color: var(--color-blue-950);
+}
+
+.finish__type-name, .finish__total-text {
+    color: var(--color-grey-500)
+}
+
+.finish__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 0 16px;
+}
+
+.finish__total-final {
+    color: var(--color-purple-600);
+    font-weight: bold;
+}
+
+.finish__btns {
+    padding: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-confirm {
+    background-color: var(--color-purple-600);
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    .finish {
+        display: flex;
+        padding: 24px;
+        background-color: #fff;
+        max-width: 686px;
+    }
+
+    .finish-information {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .finish__btns {
+        position: relative;
+    }
+}
