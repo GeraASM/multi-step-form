@@ -135,9 +135,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 348px;
     }
     
     .finish__btns {
         position: relative;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .finish {
+        max-width: 940px;
+    }
+    .finish-information {
+        width: 450px;
     }
 }
